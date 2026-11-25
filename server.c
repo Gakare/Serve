@@ -52,6 +52,12 @@ int main(int argc, char **argv)
     {
         Error("ERROR: Failed to accept");
     }
+    else
+    {
+        printf("Successfully connected...\n");
+    }
+
+    // NOTE: Prompting the user to generate 
 
     bzero(Buffer, 256);
     n = read(NewSocketFD, Buffer, 255);
